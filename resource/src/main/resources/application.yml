@@ -1,0 +1,15 @@
+auth-jwt:
+  public-cert-filename: public.cert
+
+auth-server: http://localhost:8081/authserver
+server:
+  port: 8082
+  context-path: /resource
+
+spring:
+  datasource:
+    platform: h2
+
+logging:
+  level:
+    org.springframework.security: DEBUG

@@ -1,0 +1,16 @@
+auth-jwt:
+  keystore-alias: jwt
+  keystore-filename: jwt.jks
+  keypass: mySecretKey
+  storepass: mySecretKey
+
+server:
+  port: 8081
+  context-path: /authserver
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+client:
+  url: http://localhost:8080
